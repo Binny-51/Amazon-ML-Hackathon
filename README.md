@@ -25,6 +25,36 @@ The focus is on:
 * 🔹 Combining text + image modalities effectively
 
 ---
+Problem Statement
+
+Business Objective:
+E-commerce platforms must set competitive and fair prices for products listed on their marketplace. The task is to predict the price of a product given its structured catalog text and an associated image. Accurate price predictions help in pricing recommendations, auto-listing, fraud detection, and search ranking.
+
+Task Description (ML perspective):
+
+Input:
+
+catalog_content — a text blob containing structured fields like Item Name, Unit, Value, Bullet Points, and Product Description.
+
+image_link — URL or local path to product image.
+
+Output:
+
+A predicted price (positive float).
+
+Evaluation:
+
+Metric: SMAPE (Symmetric Mean Absolute Percentage Error) — lower is better.
+
+Constraints:
+
+No external price lookup (web scraping / external APIs).
+
+Use open-source models/libraries (competition licensing constraints).
+
+Model must generalize across categories, brands, and image quality variance.
+
+Why SMAPE? SMAPE measures relative errors robustly when price values span orders of magnitude (many low-price items, few luxury items).
 
 ## 🧩 Architecture
 
