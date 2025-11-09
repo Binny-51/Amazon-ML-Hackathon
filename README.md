@@ -25,7 +25,7 @@ The focus is on:
 * 🔹 Combining text + image modalities effectively
 
 ---
-Problem Statement
+## Problem Statement
 
 Business Objective:
 E-commerce platforms must set competitive and fair prices for products listed on their marketplace. The task is to predict the price of a product given its structured catalog text and an associated image. Accurate price predictions help in pricing recommendations, auto-listing, fraud detection, and search ranking.
