@@ -24,146 +24,65 @@ The focus is on:
 * 🔹 Maintaining strong model accuracy
 * 🔹 Combining text + image modalities effectively
 
-🧩 Problem Statement
-🎯 Business Objective
+## 🧩 Problem Statement
 
-E-commerce platforms must set competitive and fair prices for products listed on their marketplace.
-The objective is to predict the price of a product given its structured catalog text and an associated image.
+### 🎯 **Business Objective**
+E-commerce platforms must set **competitive and fair prices** for products listed on their marketplace.  
+The objective is to **predict the price of a product** given its **structured catalog text** and an **associated image**.
 
 Accurate price prediction enables:
+- 💰 **Pricing recommendations** for sellers  
+- 🤖 **Automated product listing and validation**  
+- 🕵️ **Fraud detection** for outlier or misleading prices  
+- 🔍 **Enhanced search ranking and relevance**
 
-💰 Pricing recommendations for sellers
+---
 
-🤖 Automated product listing and validation
+### 🧠 **Task Description (Machine Learning Perspective)**
 
-🕵️ Fraud detection for outlier or misleading prices
+#### **Input**
+- **`catalog_content`** — A text blob containing structured fields such as:  
+  - Item Name  
+  - Unit  
+  - Value  
+  - Bullet Points  
+  - Product Description  
+- **`image_link`** — URL or local path to the corresponding product image  
 
-🔍 Enhanced search ranking and relevance
+#### **Output**
+- A **predicted price** (positive floating-point number)
 
-🧠 Task Description (Machine Learning Perspective)
-Input
+---
 
-catalog_content — A text blob containing structured fields such as:
+### 📊 **Evaluation Metric**
 
-Item Name
+- **Metric:** SMAPE (Symmetric Mean Absolute Percentage Error)  
+- **Goal:** Lower SMAPE indicates better performance.  
 
-Unit
+\[
+\text{SMAPE} = \frac{100\%}{N} \sum_{i=1}^{N} \frac{|y_i - \hat{y_i}|}{(|y_i| + |\hat{y_i}|)/2}
+\]
 
-Value
+---
 
-Bullet Points
+### ⚙️ **Constraints**
 
-Product Description
+- 🚫 **No external price lookup** allowed (e.g., web scraping or third-party APIs)  
+- 🧩 Only **open-source models/libraries** permitted (competition licensing constraints)  
+- 🌐 The model should **generalize across**:  
+  - Product categories  
+  - Brands  
+  - Image quality and style variations  
 
-image_link — URL or local path to the corresponding product image
+---
 
-Output
+### 💡 **Why SMAPE?**
 
-A predicted price (positive floating-point number)
+- SMAPE measures **relative error**, making it robust when product prices vary across **multiple orders of magnitude**.  
+- It handles **imbalanced price distributions**, such as:  
+  - Many low-cost items  
+  - Few high-end or luxury items  
 
-📊 Evaluation Metric
-
-Metric: SMAPE (Symmetric Mean Absolute Percentage Error)
-
-Goal: Lower SMAPE indicates better performance.
-
-SMAPE
-=
-100
-%
-𝑁
-∑
-𝑖
-=
-1
-𝑁
-∣
-𝑦
-𝑖
-−
-𝑦
-𝑖
-^
-∣
-(
-∣
-𝑦
-𝑖
-∣
-+
-∣
-𝑦
-𝑖
-^
-∣
-)
-/
-2
-SMAPE=
-N
-100%
-	​
-
-i=1
-∑
-N
-	​
-
-(∣y
-i
-	​
-
-∣+∣
-y
-i
-	​
-
-^
-	​
-
-∣)/2
-∣y
-i
-	​
-
-−
-y
-i
-	​
-
-^
-	​
-
-∣
-	​
-
-⚙️ Constraints
-
-🚫 No external price lookup allowed (e.g., web scraping or third-party APIs)
-
-🧩 Only open-source models/libraries permitted (competition licensing constraints)
-
-🌐 The model should generalize across:
-
-Product categories
-
-Brands
-
-Image quality and style variations
-
-💡 Why SMAPE?
-
-SMAPE measures relative error, making it robust when product prices vary across multiple orders of magnitude.
-
-It handles imbalanced price distributions, such as:
-
-Many low-cost items
-
-Few high-end or luxury itemse open-source models/libraries (competition licensing constraints).
-
-Model must generalize across categories, brands, and image quality variance.
-
-Why SMAPE? SMAPE measures relative errors robustly when price values span orders of magnitude (many low-price items, few luxury items).
 
 ## 🧩 Architecture
 
