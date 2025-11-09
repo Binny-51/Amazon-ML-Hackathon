@@ -315,6 +315,10 @@ Extracting Image Features in Batches: 100%
 * Apply **quantization or pruning** for deployment efficiency
 
 ---
+📦 Model & Artifacts Download  
+The full model (139 MB) is hosted externally due to GitHub’s 100 MB limit.  
+[🔗 Download from Google Drive]([https://drive.google.com/yourfilelink](https://drive.google.com/drive/folders/1m3QZ42C8Y7hrzk0c5f0-7ZyNz8-4nRpB?usp=sharing))
+
 
 ## 👨‍💻 Author
 
