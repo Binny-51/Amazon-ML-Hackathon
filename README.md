@@ -4,8 +4,11 @@
 ### TF-IDF + SVD + EfficientNet-B0 + XGBoost
 
 📦 **Challenge:** Amazon ML Hackathon 2025 – *Smart Product Pricing*
+
 📊 **Goal:** Predict product prices from multimodal data (catalog text + product image)
+
 ⚡ **Local Metric (SMAPE):** ~36.8
+
 🧮 **Frameworks:** PyTorch · timm · XGBoost · scikit-learn · Optuna
 
 ---
