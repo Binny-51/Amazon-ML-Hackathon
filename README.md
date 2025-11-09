@@ -59,10 +59,11 @@ Accurate price prediction enables:
 - **Metric:** SMAPE (Symmetric Mean Absolute Percentage Error)  
 - **Goal:** Lower SMAPE indicates better performance.  
 
-\[
-\text{SMAPE} = \frac{100\%}{N} \sum_{i=1}^{N} \frac{|y_i - \hat{y_i}|}{(|y_i| + |\hat{y_i}|)/2}
-\]
-
+SMAPE = (100 / N) * Σ( |y_i - ŷ_i| / ((|y_i| + |ŷ_i|) / 2) )
+where:  
+- *y_i* = actual price  
+- *ŷ_i* = predicted price  
+- *N* = number of samples 
 ---
 
 ### ⚙️ **Constraints**
