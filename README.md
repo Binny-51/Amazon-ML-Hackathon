@@ -7,7 +7,7 @@
 
 📊 **Goal:** Predict product prices from multimodal data (catalog text + product image)
 
-⚡ **Local Metric (SMAPE):** ~36.8
+⚡ **Local Metric (SMAPE):** ~50.6
 
 🧮 **Frameworks:** PyTorch · timm · XGBoost · scikit-learn · Optuna
 
@@ -224,9 +224,9 @@ Training uses GPU acceleration (`tree_method="gpu_hist"`).
 
 | Model               | Data Used  | SMAPE (↓)  |
 | :------------------ | :--------- | :--------- |
-| TF-IDF + SVD        | Text only  | ~44.0      |
-| EfficientNet        | Image only | ~41.5      |
-| Text + Image Fusion | **Both**   | **36.8 ✅** |
+| TF-IDF + SVD        | Text only  | ~52.7     |
+| EfficientNet        | Image only | ~54.6   |
+| Text + Image Fusion | **Both**   | **50.6 ✅** |
 
 ---
 
