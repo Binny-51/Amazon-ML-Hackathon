@@ -319,8 +319,11 @@ Extracting Image Features in Batches: 100%
 ## 👨‍💻 Author
 
 **IITBBS_CODERS**
+
 IIT Bhubaneswar 
-📧 [[your.email@example.com](mailto:na8792754@gmail.com)]
+
+📧 [na8792754@gmail.com](mailto:na8792754@gmail.com)]
+
 🔗 [github.com/Binny-51]
 
 ---
