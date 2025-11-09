@@ -318,12 +318,10 @@ Extracting Image Features in Batches: 100%
 
 ## 👨‍💻 Author
 
-**Naman Agrawal**
-IIT Bhubaneswar · Mechanical Engineering
-📧 [[your.email@example.com](mailto:your.email@example.com)]
-🔗 [github.com/yourusername]
+**IITBBS_CODERS**
+IIT Bhubaneswar 
+📧 [[your.email@example.com](mailto:na8792754@gmail.com)]
+🔗 [github.com/Binny-51]
 
 ---
 
-Would you like me to make an additional **section with command examples for inference/prediction** (e.g., loading `xgb_mem_efficient_model.pkl` to predict on test.csv)?
-That would complete this README for real submission use.
